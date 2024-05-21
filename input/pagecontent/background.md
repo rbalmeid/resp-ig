@@ -1,5 +1,24 @@
-### Caso de Uso:
- #### Registo ou alteração do plano terapêutico
+O INSPIRERS é um ecosistema propõe o fornecimento de um conjunto de ferramentas para automonitorização de doenças crónicas e apoio à sua autogestão. Os dados são introduzidos e acedidos utilizando interfaces específicos para cada caso de uso, desenhados para a pessoa com doença, para o profissional de saúde ou par ao investigador. Os dados que são então transmitidos de forma segura a um servido que acomoda um repositório de dados de saúde. 
+
+
+## Casos de Uso:
+
+### Pessoa com diagnóstico de asma grave utilizador do CARATm
+A asma é uma doença inflamatóri crónica das vias aéreas que se caracteriza pelo estreitamento dos brônquios, cujo tratamento passa pelo uso de medicação de controlo, de forma a reduzir os sintomas e o risco de exacerbações. A asma grave é um tipo de asma que não responde bem ao tratamento.  Assim, na asma grave não há resposta ao tratamento habitual, permanecendo mal controlada, apesar de intensamente tratada.
+
+O Registo de Asma Grave Portugal (RAG) é um registo nacional de doentes com asma moderada a grave (no degrau 4 ou 5 de tratamento, de acordo com diretivas da Global Initiative for Asthma), baseado na internet, disponível em asmagrave.pt, após autenticação.
+
+A REAG-Rede de Especialistas de Asma Grave é uma rede colaborativa informal de especialistas em asma (imunoalergologistas, pediatras, pneumologistas) que se dedicam à melhoria dos cuidados aos doentes com asma grave em hospitais portugueses, desde 2011. A REAG desenvolveu o Registo de Asma Grave (RAG) Portugal que tem como objetivos:
+
+1. Melhorar a prestação de cuidados de saúde para a asma grave, identificando e promovendo melhores práticas clínicas de diagnóstico e tratamento de asma grave e harmonização a sua documentação;
+
+2. Facilitar projetos colaborativos, promovendo a cooperação entre os centros, auxiliando a execução dos projetos de investigação e permitindo a participação em redes ou projetos internacionais;
+
+3. Contribuir para a definição e a adoção de políticas de saúde que ajudem os Portugueses com asma grave.
+
+A CARATm – Caraterísticas Auto-reportadas de Asma em Tecnologias Móveis, é uma aplicação móvel para pessoas com asma grave, com objetivo de monitorização e caraterização da doença através de dados auto-reportados pelo doente. É uma ferramenta de recolha de dados para apoio à consulta da especialidade, através da sua integração no RAG e também de apoio à realização de estudos de investigação clínica.
+
+  #### Registo ou alteração do plano terapêutico
 - **Descrição**: A pessoa em tratamento precisa de definir o seu plano terapêutico.
 - **Fluxo de Trabalho**:
   1. A pessoa em tratamento acede ao sistema  solicita o plano de tratamento que lhe da acesso a uma lista dos medicamentos anteriormente registados.
