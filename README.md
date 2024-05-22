@@ -38,3 +38,7 @@ Kanban board:  __https://github.com/<handle>/<repo>/projects/1__
 4. pasta examples para recursos exemplo em json
 5. pasta images para images
 6. pasta images-source para conteudo plantuml
+
+
+  export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
