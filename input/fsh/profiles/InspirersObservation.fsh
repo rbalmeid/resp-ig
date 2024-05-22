@@ -6,6 +6,7 @@ Title: "Inspirers Observation Profile"
 Description: "Defines constraints and extensions on the Observation resource for the minimal set of data to query and retrieve patient observations."
 
 * subject 1..1 MS
+effectiveDateTime 1..1 MS
 
 * status 1..1 MS
 * category 1..1 MS
