@@ -1,11 +1,23 @@
-O INSPIRERS é um ecosistema propõe o fornecimento de um conjunto de ferramentas para automonitorização de doenças crónicas e apoio à sua autogestão. Os dados são introduzidos e acedidos utilizando interfaces específicos para cada caso de uso, desenhados para a pessoa com doença, para o profissional de saúde ou par ao investigador. Os dados que são então transmitidos de forma segura a um servido que acomoda um repositório de dados de saúde. 
+O INSPIRERS é um ecosistema propõe o fornecimento de um conjunto de ferramentas para automonitorização de doenças crónicas e apoio à sua autogestão. Os dados são introduzidos e acedidos utilizando interfaces específicos para cada caso de uso, desenhados para a pessoa com doença, para o profissional de saúde ou para o investigador. Os dados que são então transmitidos de forma segura a um servido que acomoda um repositório de dados de saúde. A partir deste repositório é possivel agregar serviçoes adicionais baseados no processsamento dos dados fornecidos, como por exemplo a geração de recomendações  com base na informação autoreportada e evidência clínica para apoio à auto gestão da doença entre visitas médicas.
 
+# Cenários de utilização e o seu contexto
+## Pessoa adulta com diagnóstico de doença respiratória obstrutiva crónica
 
-## Casos de Uso:
+A app AIRDOC: Aplicação móvel Inteligente para suporte individualizado e monitorização da função e sons Respiratórios de Doentes Obstrutivos Crónicos - é interface mais genérico do ecossistema INSPIRERS. Foi desenhada com o propósito de fornecer apoio na auto monitorização e auto gestão das doenças respiratórias obstrutivas crónicas, nomeadamente asma e doença pulmonar obstrutiva crónica.
 
-### Pessoa com diagnóstico de asma grave utilizador do CARATm
-A asma é uma doença inflamatória crónica das vias aéreas que se caracteriza pelo estreitamento dos brônquios, cujo tratamento passa pelo uso de medicação de controlo, de forma a reduzir os sintomas e o risco de exacerbações. A asma grave é um tipo de asma que não responde bem ao tratamento.  Assim, na asma grave não há resposta ao tratamento habitual, permanecendo mal controlada, apesar de intensamente tratada.
+A asma é uma doença inflamatória crónica das vias aéreas que se caracteriza pelo estreitamento dos brônquios, cujo tratamento passa pelo uso de medicação de controlo, de forma a reduzir os sintomas e o risco de exacerbações. A Doença Pulmonar Obstrutiva Crónica (DPOC) é uma condição pulmonar progressiva e crónica caracterizada por uma obstrução persistente do fluxo de ar nos pulmões. Essa obstrução dificulta a respiração e piora com o tempo. 
 
+A app AIRDOC contém módulos de monitorização e suporte à adesão terapêutica, monitorização de sintomas, registo de sons respiratórios e de apoio à gestão da doença via recomendações automáticas. Inclui também a possibilidade do mesmo utilizador gerir vários perfis de monitorização de forma a acomodar situações em que o utilizador seja o cuidador de pessoas com doença respiratória crónica que não utilizem a app de forma autonoma.
+
+## Cuidador de criança ou jovem com doença respiratória
+
+A InspirersKids é uma aplicação móvel especialmente dedicada aos cuidadores de crianças e adolescentes com doença respiratória. Dada a comuhão de sintomas entre as doenças repiratórias agudas e crónicas a app está preparada para monitorizar ambas as situações. Contém módulos de monitorização e suporte à adesão terapêutica, monitorização de sintomas e registo de sons respiratórios, sendo os dois últimos especialmente adaptados à idade pediátrica. 
+
+## Pessoa com diagnóstico de asma grave
+
+A CARATm – Caraterísticas Auto-reportadas de Asma em Tecnologias Móveis, é uma aplicação móvel para pessoas com asma grave, com objetivo de monitorização e caraterização da doença através de dados auto-reportados pelo doente. É uma ferramenta de recolha de dados para apoio à consulta da especialidade, através da sua integração no RAG e também de apoio à realização de estudos de investigação clínica.
+
+A asma grave é um tipo de asma que não responde bem ao tratamento.  Assim, na asma grave não há resposta ao tratamento habitual, permanecendo mal controlada, apesar de intensamente tratada.
 O Registo de Asma Grave Portugal (RAG) é um registo nacional de doentes com asma moderada a grave (no degrau 4 ou 5 de tratamento, de acordo com diretivas da Global Initiative for Asthma), baseado na internet, disponível em asmagrave.pt, após autenticação.
 
 A REAG-Rede de Especialistas de Asma Grave é uma rede colaborativa informal de especialistas em asma (imunoalergologistas, pediatras, pneumologistas) que se dedicam à melhoria dos cuidados aos doentes com asma grave em hospitais portugueses, desde 2011. A REAG desenvolveu o Registo de Asma Grave (RAG) Portugal que tem como objetivos:
@@ -16,9 +28,8 @@ A REAG-Rede de Especialistas de Asma Grave é uma rede colaborativa informal de 
 
 3. Contribuir para a definição e a adoção de políticas de saúde que ajudem os Portugueses com asma grave.
 
-A CARATm – Caraterísticas Auto-reportadas de Asma em Tecnologias Móveis, é uma aplicação móvel para pessoas com asma grave, com objetivo de monitorização e caraterização da doença através de dados auto-reportados pelo doente. É uma ferramenta de recolha de dados para apoio à consulta da especialidade, através da sua integração no RAG e também de apoio à realização de estudos de investigação clínica.
-
-  #### Registo ou alteração do plano terapêutico
+# Casos de Uso:
+  ## Registo ou alteração do plano terapêutico
 - **Descrição**: A pessoa em tratamento precisa de definir o seu plano terapêutico.
 - **Fluxo de Trabalho**:
   1. A pessoa em tratamento acede ao sistema  solicita o plano de tratamento que lhe da acesso a uma lista dos medicamentos anteriormente registados, se exitirem, ou propõe a introdução de umnovo plano terapêutico.
