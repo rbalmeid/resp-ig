@@ -1,0 +1,35 @@
+{
+    "resourceType":"MedicationAdministration",
+    "id":"MedicationAdministration_ID_example",
+    "meta":{
+        "source":"Airdoc"
+        },
+        "status":"not done",
+        "category":{
+            "coding":[{
+                "system":"http://terminology.hl7.org/CodeSystem/medication-admin-category",
+                "code":"community",
+                "display":"community"
+                }]},
+                "medicationReference":{
+                    "reference":"Medication/Medication_ID_example"
+                    },
+                    "subject":{
+                        "reference":"Patient/patient_ID_example"
+                        },"supportingInformation":[{
+                            "reference":"MedicationStatement/MedicationStatement_ID_example"
+                        }],
+                        "effectiveDateTime":"2021-12-14T09:00:00.000Z",
+                        "performer":[{
+                            "actor":{
+                                "reference":"Patient/patient_ID_example"
+                                }}],
+                                "reasonCode":[{
+                                    "coding":[{
+                                        "system":"http://terminology.hl7.org/CodeSystem/reason-medication-given",
+                                        "code":"b",
+                                        "display":"Given as Ordered"
+                                        }]}]}
+                                    
+                                    
+                                        

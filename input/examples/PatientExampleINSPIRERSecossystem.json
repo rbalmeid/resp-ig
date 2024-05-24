@@ -1,0 +1,14 @@
+{
+    "resourceType":"Patient",
+    "id":"patient_ID_example",
+    "identifier":[{
+        "assigner":{
+            "display":"using_reason"
+            }}],
+            "name":[{
+                "given":["surname","name"]}],
+                    "gender":"female",
+                    "birthDate":"aaaa-mm",
+                    "managingOrganization":{
+                        "reference":"Airdoc"
+                        }}

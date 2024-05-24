@@ -1,0 +1,26 @@
+   {
+"resourceType":"Condition",
+    "id":"condition_ID_example",
+    "clinicalStatus":{
+        "coding":[{
+            "system":"http://terminology.hl7.org/CodeSystem/condition-clinical","code":"active"
+            }]},
+            "verificationStatus":{
+                "coding":[{
+                    "system":"http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                    "code":"unconfirmed"
+                    }]},
+                    "code":{
+                        "coding":[{
+                            "system":"http://codesystem.inspirers.med.up.pt",
+                            "code":"D_1.1_1"
+                            }]},
+                            "subject":{
+                                "reference":"Patient/patient_ID_example"
+                                },
+                                "recordedDate":"2021-12-14T09:57:37.057Z",
+                                "recorder":{
+                                    "reference":"QuestionnaireResponse/QuestionnaireResponse_ID_example"
+                                    }
+                                }
+                                    

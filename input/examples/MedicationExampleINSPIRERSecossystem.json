@@ -1,0 +1,61 @@
+{
+    "resourceType": "Medication",
+    "id":"Medication_ID_example",
+    "code": {
+      "coding": [
+        {
+          "system": "http://codesystem.inspirers.med.up.pt",
+          "code": "FluticasonePropionate_inhalernnn",
+          "display": "Fluticasone Propionate inhaler nnn"
+        },
+        {
+          "system": "http://www.whocc.no/atc",
+          "code": "R03BA05"
+        }
+      ]
+    },
+    "status": "active",
+    "form": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+          "code": "BAINHLPWD"
+        }
+      ]
+    },
+    "amount": {
+      "numerator": {
+        "value": 60
+      },
+      "denominator": {
+        "value": 1
+      }
+    },
+    "ingredient": [
+      {
+        "itemCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://codesystem.inspirers.med.up.pt",
+              "code": "Fluticasona"
+            },
+            {
+              "system": "http://codesystem.inspirers.med.up.pt",
+              "code": "ICS"
+            }
+          ]
+        },
+        "strength": {
+          "numerator": {
+            "value": 100,   	    				  	
+            "system": "http://unitsofmeasure.org",
+            "code": "ug"			    				
+          },
+          "denominator": {
+            "value": 1
+          }
+        }
+      }
+    ]
+  }
+  
