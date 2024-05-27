@@ -46,19 +46,19 @@ so and so...
 <tbody>
 <tr class="odd">
 <td>Author</td>
-<td>zzz</td>
-<td>xxxx</td>
-<td>yyyy</td>
+<td>Pedro Vieira-Marques</td>
+<td>Faculdade de Medicina da Universidade do Porto</td>
+<td>pmarques@med.up.pt</td>
 </tr><tr class="even">
 <td>Author</td>
-<td>xxx</td>
-<td></td>
-<td>dssd</td>
+<td>Rute Almeida</td>
+<td>Faculdade de Medicina da Universidade do Porto</td>
+<td>rutealmeida@med.up.pt</td>
 </tr><tr class="odd">
 <td>Author</td>
-<td>asdasd</td>
-<td>asdasd</td>
-<td>asdas</td>
+<td>Ana Pereira</td>
+<td>Faculdade de Medicina da Universidade do Porto</td>
+<td>ambrp@med.up.pt</td>
 </tr><tr class="even">
 <td>Author</td>
 <td>asdasd</td>
