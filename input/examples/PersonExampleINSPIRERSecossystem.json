@@ -1,0 +1,20 @@
+{
+    "resourceType": "Person",
+    "id": "person_ID_example",
+    "identifier": [
+        {
+            "system": "AIRDOC-OPENID",
+            "value": "08991e2b-0860-491c-be5d-f0150bc560aa"
+        }
+    ],
+    "link": [
+        {
+            "target": {
+                "reference": "/fhir/api/Patient/Patient/patient_ID_example"
+            }
+        },
+        {
+            "target": {
+                "reference": "Patient/Patient/patient_ID_example2"
+            }
+                }]}

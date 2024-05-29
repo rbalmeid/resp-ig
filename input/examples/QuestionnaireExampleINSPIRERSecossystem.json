@@ -1,0 +1,1284 @@
+{
+    "language": "PTpt",
+    "version": "1.2",
+    "status": "draft",
+    "url": "http://fhir.inspirers.med.up.pt/Questionnaire/Q901PTpt|1.2",
+    "name": "Q901",
+    "title": "Controlo da Asma e Rinite",
+    "code": [
+      {
+        "system": "http://codesystem.inspirers.med.up.pt",
+        "code": "Q901PTpt",
+        "version": "1.2"
+      }
+    ],
+    "resourceType": "Questionnaire",
+    "meta": {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/cqf-questionnaire"
+      ]
+    },
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/variable",
+        "valueExpression": {
+          "name": "CARATT",
+          "language": "AIRDOC",
+         "expression": "%item.item.linkId='Q901_1.1'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.2'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.3'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.4'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.5'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.6'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.7'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.8'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.9'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_2.1'.answerOption.extension.valueDecimal"
+        }
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/variable",
+        "valueExpression": {
+          "name": "CARATU",
+          "language": "AIRDOC",
+          "expression": "%item.item.linkId='Q901_1.1'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.2'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.3'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.4'.answerOption.extension.valueDecimal"
+        }
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/variable",
+        "valueExpression": {
+          "name": "CARATL",
+          "language": "AIRDOC",
+          "expression": "%item.item.linkId='Q901_1.5'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.6'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.7'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.8'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_1.9'.answerOption.extension.valueDecimal+%item.item.linkId='Q901_2.1'.answerOption.extension.valueDecimal"
+        }
+      }
+    ],
+    "item": [
+      {
+        "type": "group",
+        "linkId": "Q901_0.1",
+        "required": false,
+        "text": "Por causa das suas doenças alérgicas respiratórias (asma/rinite/alergia), em média, nas últimas 4 semanas, quantas vezes teve:",
+        "item": [
+          {
+            "type": "choice",
+            "linkId": "Q901_1.1",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "text": "Nariz entupido?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          },
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_1.2",
+            "text": "Espirros?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          },
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_1.3",
+            "text": "Comichão no nariz?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          },
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_1.4",
+            "text": "Corrimento/pingo do nariz?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          },
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_1.5",
+            "text": "Falta de ar/dispneia?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          },
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_1.6",
+            "text": "Chiadeira no peito/pieira",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          },
+           {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_1.7",
+            "text": "Aperto no peito com esforço físico?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          },
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_1.8",
+            "text": "Cansaço/dificuldade em fazer as suas atividades ou tarefas do dia-a-dia?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          },
+            {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_1.9",
+            "text": "Acordou durante a noite por causa das suas doenças alérgicas respiratórias?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "linkId": "Q901_0.2",
+        "required": false,
+        "text": "Por causa das suas doenças alérgicas respiratórias (asma/rinite/alergia), nas últimas 4 semanas, quantas vezes teve de:",
+        "item": [
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_2.1",
+            "text": "Aumentar a utilização dos seus medicamentos?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Não estou a tomar medicamentos"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "I.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Menos de 7 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "G.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "7 ou mais dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "G.2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "linkId": "Q901_0.3",
+        "required": false,
+        "text": "Por causa das suas doenças alérgicas respiratórias (asma/rinite/alergia), em média, nas últimas 4 semanas, quantas vezes teve:",
+        "item": [
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_3.1",
+            "text": "Queixas nos olhos como comichão, lacrimejo ou irritação nos olhos?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          },
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_3.2",
+            "text": "Tosse?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          },
+          {
+            "type": "choice",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "drop-down",
+                      "display": "Drop down"
+                    }
+                  ],
+                  "text": "Drop down"
+                }
+              }
+            ],
+            "required": false,
+            "linkId": "Q901_3.3",
+            "text": "Queixas na garganta como comichão, pigarro ou sensação de expectoração na garganta?",
+            "answerOption": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Nunca"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "A.7"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Até 1 ou 2 dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.1"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Mais de 2 dias por semana"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.2"
+                }
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+                    "valueString": "Quase todos ou todos os dias"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ],
+                "valueCoding": {
+                  "system": "http://codesystem.inspirers.med.up.pt",
+                  "code": "P.3"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "linkId": "Q901_0.4",
+        "required": false,
+        "text": "Pontuação CARAT:",
+        "item": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+                "valueBoolean": true
+              }
+            ],
+            "type": "integer",
+            "code": [
+              {
+                "system": "http://codesystem.inspirers.med.up.pt",
+                "code": "2_901_4"
+              }
+            ],
+            "initial": [
+              {
+                "valueCoding": {
+                  "code": "%CARATU"
+                }
+              }
+            ],
+            "required": false,
+            "readOnly": true,
+            "linkId": "Q901_4.1",
+            "text": "CARAT pontuação de vias aéreas superiores:"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+                "valueBoolean": true
+              }
+            ],
+            "type": "integer",
+            "code": [
+              {
+                "system": "http://codesystem.inspirers.med.up.pt",
+                "code": "2_901_6"
+              }
+            ],
+            "initial": [
+              {
+                "valueCoding": {
+                  "code": "%CARATL"
+                }
+              }
+            ],
+            "required": false,
+            "readOnly": true,
+            "linkId": "Q901_4.2",
+            "text": "CARAT pontuação de vias aéreas inferiores:"
+          },
+          {
+            "type": "integer",
+            "code": [
+              {
+                "system": "http://codesystem.inspirers.med.up.pt",
+                "code": "2_901_10"
+              }
+            ],
+            "initial": [
+              {
+                "valueCoding": {
+                  "code": "%CARATT"
+                }
+              }
+            ],
+            "required": false,
+            "readOnly": true,
+            "linkId": "Q901_4.3",
+            "text": "Pontuações CARAT superiores a 24 indicam bom controlo da doença. Pontuação total:"
+          }
+        ]
+      }
+    ]
+  }

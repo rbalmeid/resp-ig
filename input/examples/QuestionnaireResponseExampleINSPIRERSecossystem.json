@@ -1,0 +1,169 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "QuestionnaireResponse_ID_example1",
+    "meta": {
+        "source": "Airdoc"
+    },
+    "questionnaire": "http://fhir.inspirers.med.up.pt/Questionnaire/Q901PTpt|1.1",
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/patient_ID_example"
+    },
+    "authored": "2021-11-28T15:48:21.048Z",
+    "source": {
+        "reference": "Patient/patient_ID_example"
+    },
+    "item": [
+        {
+            "linkId": "Q901_1.1",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "P.2"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_1.2",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "P.1"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_1.3",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "P.2"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_1.4",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "A.7"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_1.5",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "P.2"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_1.6",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "A.7"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_1.7",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "P.1"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_1.8",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "P.1"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_1.9",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "A.7"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_2.1",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "A.7"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_3.1",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "P.3"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_3.2",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "P.1"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_3.3",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://codesystem.inspirers.med.up.pt",
+                        "code": "A.7"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "Q901_4.3",
+            "answer": [
+                {
+                    "valueInteger": 21
+                }
+            ]
+        }
+    ]
+}

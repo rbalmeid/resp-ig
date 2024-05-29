@@ -1,0 +1,39 @@
+{
+    "resourceType": "Media",
+    "id": "media_ID_example",
+    "meta": {
+        "source": "Airdoc"
+    },
+    "status": "completed",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/media-type",
+                "code": "audio"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/patient_ID_example"
+    },
+    "createdDateTime": "2021-11-19T21:09:24.009Z",
+    "issued": "2021-11-19T21:09:24.009Z",
+    "operator": {
+        "reference": "Practitioner/6197b4718a1c764009364404-author"
+    },
+    "bodySite": {
+        "text": "Lung Function"
+    },
+    "duration": 10.0,
+    "content": {
+        "id": "a1",
+        "contentType": "audio/wav",
+        "data": "UklGRiSXDgBAAAAAAAAAAAAAAAAAAAAAAAAQArAWIBlwHLAQsCRAKHAskCBwNIA4kDzwMOBBzsIbQiRCKoI",
+        "creation": "2021-11-19T14:33:08.033Z"
+    },
+    "note": [
+        {
+            "time": "2021-11-19T14:33:08.033Z"
+        }
+    ]
+}
