@@ -13,6 +13,7 @@
       }
     ],
     "resourceType": "Questionnaire",
+    "id": "questionnaire_ID_example",
     "meta": {
       "profile": [
         "http://hl7.org/fhir/StructureDefinition/cqf-questionnaire"

@@ -7,4 +7,3 @@ Description: "Defines constraints and extensions on the Media resource for the m
 
 * subject 1..1 MS
 
-effectiveDateTime 1..1 MS

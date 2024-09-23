@@ -6,7 +6,7 @@ Title: "Inspirers Observation Profile"
 Description: "Defines constraints and extensions on the Observation resource for the minimal set of data to query and retrieve patient observations."
 
 * subject 1..1 MS
-effectiveDateTime 1..1 MS
+* effectiveDateTime 1..1 MS
 
 * status 1..1 MS
 * category 1..1 MS
@@ -14,7 +14,7 @@ effectiveDateTime 1..1 MS
 * category.coding.system 1..1
 * category.coding.code 1..1
 * category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
-* code 1..1 MS
+
 * code.coding 1..1
 * code.coding.system 1..1
 * code.coding.code 1..1

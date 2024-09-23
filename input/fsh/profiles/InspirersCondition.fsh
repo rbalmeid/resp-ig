@@ -5,7 +5,7 @@ Id: inspirers-condition
 Title: "Inspirers Condition Profile"
 Description: "Defines constraints and extensions on the Condition resource for the minimal set of data to query and retrieve patient observations."
 
-* subject 1..1 MS// Must be present
+* subject 1..1 MS // Must be present
 
 * subject.reference 1..1 MS
 

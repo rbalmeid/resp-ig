@@ -1,7 +1,7 @@
 O INSPIRERS é um ecosistema que propõe o fornecimento de um conjunto de ferramentas para o doente de modo a permitir a automonitorização de doenças e apoio à sua autogestão. Os dados são introduzidos e acedidos utilizando interfaces específicos para cada caso de uso, sendo desenhados para a pessoa com doença, para o profissional de saúde ou para o investigador. Os dados são então transmitidos de forma segura a um servidor que acomoda um repositório de dados de saúde. A partir deste repositório é possivel agregar serviços adicionais baseados no processsamento dos dados fornecidos, como por exemplo a geração de recomendações para apoio à auto gestão da doença entre visitas médicas com base na informação autoreportada e na evidência clínica que integra a base de conhecimento do ecosistema INSPIRERS.
 
-# Cenários de utilização e o seu contexto
-## Pessoa adulta com diagnóstico de doença respiratória obstrutiva crónica
+ Cenários de utilização e o seu contexto
+#  Pessoa adulta com diagnóstico de doença respiratória obstrutiva crónica
 
 As doenças respiratórias obstrutivas crónicas (DROC) são um grupo de condições das vias aéreas que causam obstrução crónica do fluxo de ar nos pulmões, dificultando a respiração. As principais doenças desse grupo incluem a Doença Pulmonar Obstrutiva Crónica (DPOC) e a asma.
 
